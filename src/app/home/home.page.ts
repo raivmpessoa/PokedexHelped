@@ -30,6 +30,7 @@ export class HomePage implements OnInit {
           .buscarUmPokemon(pokemon.url)
           .subscribe((dadosPokemon) => {
             this.listaPokemon.push(dadosPokemon);
+            console.log(dadosPokemon);
           });
         }
     });
